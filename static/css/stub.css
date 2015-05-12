@@ -1,0 +1,41 @@
+* {
+ margin: 0; padding: 0;
+}
+
+head {
+ height: 100%;
+}
+
+body {
+ text-align: center;
+ background: #2f97d9;
+ font-family: "Open Sans", "Segoe UI", arial, verdana, tahoma, sans-serif;
+ font-size: 14px;
+}
+
+.wrapper {
+ height: 100%;
+ width: 100%;
+ position: absolute;
+}
+
+.content {
+ position: relative; top: 50%;
+ margin-top: -100px;
+}
+
+.footer {
+ font-size: 20px;
+ position: absolute; bottom: 0;
+ line-height: 30px;
+ width: 100%;
+ height: 75px;
+}
+
+.footer p {
+ margin: 0 auto;
+}
+
+.logo {
+ height: 150px; width: 600px;
+}
