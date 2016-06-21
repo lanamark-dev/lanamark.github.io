@@ -1,0 +1,84 @@
+
+// Site default
+// -------------------------------------------------------
+
+* {
+    .box-sizing(border-box);
+}
+
+html {
+    background: @bodyBackground;
+}
+html,
+body {
+    .square(100%);
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    color: @bodyColor;
+    text-align: center;
+    #font #family .nimbus();
+}
+
+section {
+	padding: 0;
+	margin: 0;
+}
+
+// Site custom
+// -------------------------------------------------------
+
+.section {
+    .size(100%, auto);
+
+    .inner {
+        .size(1360px, auto);
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1440px){
+        .inner {
+            width: 100%;
+            padding: 0 60px;
+        }
+    }
+    @media (max-width: 600px){
+        .inner {
+            padding: 0 40px;
+        }
+    }
+}
+
+// .site-wrapper {
+//     .size(100%, auto);
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .section {
+//     .size(100%, auto);
+
+//     &.features {
+//         height: auto;
+//     }
+// }
+
+// .inner {
+//     .size(960px, auto);
+//     margin: 0 auto;
+//     overflow: hidden;
+
+//     @media (max-width: 1054px) {
+//         width: 100%;
+//         padding: 0 40px;
+//     }
+//     @media (max-width: 470px) {
+//         padding: 0 30px;
+//     }
+//     @media (max-width: 420px) {
+//         padding: 0 20px;
+//     }
+// }

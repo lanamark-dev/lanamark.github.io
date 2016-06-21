@@ -1,0 +1,150 @@
+.pricing.netapp {
+
+	.section {
+		z-index: 9000;
+	}
+
+	.feature.title {
+		border-bottom: 0;
+	}
+
+	.netapp-tools {
+		padding: 81px 0 121px;
+		background-color: #F9FAFB;
+		border-top: 1px solid #f3f4f5;
+		border-bottom: 1px solid #f3f4f5;
+
+		.icon {
+			display: inline-block;
+			margin-right: 16px;
+		}
+		h3 {
+			display: inline-block;
+			position: relative;
+    		top: -24px;
+			#font .aktiv(24, 400, 1.4em);
+			color: #2D3540;
+		}
+		.button {
+			display: block;
+			width: 140px;
+			margin: auto;
+			margin-top: 20px;
+			background: #ffffff;
+			color: #F8902B;
+
+			&:hover,
+			&:active {
+				background-color: #F8902B;
+				color: #ffffff;
+			}
+		}
+
+		.columns {
+			.column {
+				padding: 30px 0;
+
+				&:last-child {
+					border-left: 1px solid #ebedee;
+				}
+			}
+		}
+
+		@media (max-width: 920px){
+			padding: 61px 0 101px;
+
+	        .icon {
+	        	position: relative;
+	        	top: -10px;
+	        }
+	    }
+	    @media (max-width: 830px){
+	    	padding-bottom: 81px;
+
+	    	.button {
+	    		margin-top: 10px;
+	    	}
+			.columns {
+				.column {
+					width: 100%;
+					margin-bottom: 10px;
+
+					&:last-child {
+						border-left: 0;
+					}
+				}
+			}
+	    }
+	    @media (max-width: 500px){
+	    	padding-top: 41px;
+	    	padding-bottom: 51px;
+
+	        .icon {
+	        	display: block;
+	        	top: 0;
+	        	margin-right: 0;
+	        	margin: auto;
+	        	margin-bottom: 10px;
+	        }
+	        h3 {
+	        	top: 0;
+	        }
+	    }
+	}
+
+	.price-tables {
+		padding-bottom: 30px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #f3f4f5;
+
+		.columns.prices {
+			width: 640px;
+			margin: auto;
+			border-bottom: 0;
+
+			.column {
+				width: 47.874%;
+			}
+		}
+
+		@media (max-width: 780px){
+	        .columns.prices {
+				width: 100%;
+			}
+	    }
+	}
+
+	.key-features.feature {
+		
+		h2 {
+			width: 60%;
+			margin: auto;
+			line-height: 1.5em;
+		}
+
+		.preview {
+			margin: 90px 0 40px;
+		}
+
+		@media (max-width: 938px){
+	        .preview {
+	       		.size(600px, auto);
+	        }
+	    }
+	    @media (max-width: 840px){
+	        h2 {
+	        	width: 100%;
+	        }
+	    }
+	    @media (max-width: 738px){
+	        .preview {
+	       		width: 90%;
+	        }
+	    }
+	    @media (max-width: 440px){
+	        .preview {
+	        	width: 100%;
+	        }
+	    }
+	}
+}
