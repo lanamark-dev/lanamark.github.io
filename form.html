@@ -9,7 +9,21 @@
 
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-
+    <style>
+        .contact-form {
+            input {
+                display: block;
+                width: 400px;
+                margin: auto;
+                border-radius: 4px;
+                height: 3.8rem;
+                font-size: 1.4rem;
+                padding: 0 10px;
+                border: 2px solid #F8902B;
+                color: #F8902B;
+            }
+        }
+    </style>
     <script src="https://use.typekit.net/asl4qwy.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
@@ -53,7 +67,7 @@
 
         <div class="section netapp-tools">
             <div class="inner">
-                <form method="POST" action="////formspree.io/mark@lanamark.com">
+                <form class="contact-form" method="POST" action="////formspree.io/mark@lanamark.com">
                   <input type="email" name="_replyto" placeholder="Your email" />
                   <textarea name="message" rows="5" placeholder="Your message"></textarea>
                   <input type="text" name="_gotcha" style="display:none">
