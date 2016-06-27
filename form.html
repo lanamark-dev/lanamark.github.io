@@ -10,53 +10,53 @@
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <style>
-        .contact-form input, textarea {
-            display: block;
-            width: 600px;
-            margin: auto;
-            margin-top: 20px;
-            border-radius: 4px;
-            padding: 0 10px;
-            border: 1px solid #21276d;
-            color: #F8902B;
-            font-family: aktiv-grotesk,sans-serif;
-            line-height: 1.5rem;
-            font-size: 1.8rem;
-            font-weight: 300;
-        }
-        
-        .contact-form input {
-            height: 3.8rem;
-        }
-        
-        .contact-form textarea {
-            padding: 10px;
-        }
-        
-        .contact-form button {
-            display: block;
-            width: 140px;
-            height: 52px;
-            margin: auto;
-            margin-top: 20px;
-            background: #F8902B;
-            font-weight: 500;
-            font-size: 1.6rem;
-            border: 2px solid #F8902B;
-            padding: 0 20px;
-            color: #fff;
-            font-family: aktiv-grotesk,sans-serif;
-            position: relative;
-            border-radius: 3px;
-            transition: all .4s ease;
-            
-            &:hover,
-			&:active {
-				background-color: #FFFFFF;
-				color: #F8902B;
-			}
-        }
-        
+	.contact-form {
+	  input, textarea {
+	    display: block;
+	    width: 600px;
+	    margin: auto;
+	    margin-top: 20px;
+	    border-radius: 4px;
+	    padding: 0 10px;
+	    border: 1px solid #21276d;
+	    color: #F8902B;
+	    font-family: aktiv-grotesk,sans-serif;
+	    line-height: 1.5rem;
+	    font-size: 1.8rem;
+	    font-weight: 300;
+	  }
+	
+	  input {
+	    height: 3.8rem;
+	  }
+	
+	  .textarea {
+	    padding: 10px;
+	  }
+	
+	  .button {
+	    display: block;
+	    width: 140px;
+	    height: 52px;
+	    margin: auto;
+	    margin-top: 20px;
+	    background: #F8902B;
+	    font-weight: 500;
+	    font-size: 1.6rem;
+	    border: 2px solid #F8902B;
+	    padding: 0 20px;
+	    color: #fff;
+	    font-family: aktiv-grotesk,sans-serif;
+	    position: relative;
+	    border-radius: 3px;
+	    transition: all .4s ease;
+	  }
+	
+	  .button:hover, .button:active, .button:focus {
+	    background-color: #FFFFFF;
+	    color: #F8902B;
+	  }
+	}        
     </style>
     <script src="https://use.typekit.net/asl4qwy.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -105,7 +105,7 @@
                   <input type="email" name="_replyto" placeholder="Your email" />
                   <textarea name="message" rows="5" placeholder="Your message"></textarea>
                   <input type="text" name="_gotcha" style="display:none">
-                  <button type="submit">Send</button>
+                  <button  class="button" type="submit">Send</button>
                 </form>
             </div>
         </div>
