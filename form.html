@@ -25,9 +25,6 @@
             line-height: 1.5rem;
             font-size: 1.8rem;
             font-weight: 300;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
         }
 
         .contact-form  input,
@@ -45,6 +42,14 @@
             border: 1px solid #444;
         }
 
+        .contact-form  input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+        
         .contact-form .button-form {
             display: block;
             width: 140px;
