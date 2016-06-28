@@ -35,6 +35,12 @@
 	  .contact-form  textarea {
 	    padding: 10px;
 	  }
+	  
+	  .contact-form  input.two,
+	  .contact-form textarea.two,
+	  .contact-form select.two {
+	  	border: 1px solid red;
+	  }
 
 	  .contact-form .button-form {
 	    display: block;
@@ -159,7 +165,7 @@
                	  <input type="text" name="firstname" placeholder="Your first name" />
                	  <input type="text" name="lastname" placeholder="Your last name" />
                   <input type="email" name="_replyto" placeholder="Your email" />
-                  <select class="form-input" name="LocationCode" required="">
+                  <select name="LocationCode" required="">
 			<option value="AF">Afghanistan</option>
 			<option value="AX">Åland Islands</option>
 			<option value="AL">Albania</option>
@@ -175,10 +181,10 @@
         <div class="section netapp-tools">
             <div class="inner">
                 <form class="contact-form" method="POST" action="////formspree.io/mark@lanamark.com">
-               	  <input type="text" name="firstname" placeholder="Your first name" />
-               	  <input type="text" name="lastname" placeholder="Your last name" />
-                  <input type="email" name="_replyto" placeholder="Your email" />
-                  <select class="form-input" name="LocationCode" required="">
+               	  <input class="two" type="text" name="firstname" placeholder="Your first name" />
+               	  <input class="two" type="text" name="lastname" placeholder="Your last name" />
+                  <input class="two" type="email" name="_replyto" placeholder="Your email" />
+                  <select class="two" name="LocationCode" required="">
 			<option value="AF">Afghanistan</option>
 			<option value="AX">Åland Islands</option>
 			<option value="AL">Albania</option>
