@@ -1,0 +1,27 @@
+{% for form in site.pages %}
+  {% if form.type == 'form' and form.id == include.id %}
+    <div class="section {{ form.backgroundClass }}">
+      <div class="inner">
+        <form class="contact-form {{ form.align }}" method="POST" action="{{ site.formaction }}">
+          {% for field in form.fields %}
+            {% if field.row %}
+              <textarea name="{{ field.name }}" rows="{{ field.row }}" placeholder="{{ field.placeholder }}"></textarea>
+            {% elsif field.elm %}
+              {% include {{ field.elm }} %}
+            {% elsif field.options %}
+              <select name="{{ field.name }}">
+                {% for option in field.options %}
+                <option value="{{ option.value }}">{{ option.text }}</option>
+                {% endfor %}
+              </select>
+            {% else %}
+              <input type="{{ field.type }}" name="{{ field.name }}" placeholder="{{ field.placeholder }}" />
+            {% endif %}
+
+          {% endfor %}
+          <button  class="button-form one" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

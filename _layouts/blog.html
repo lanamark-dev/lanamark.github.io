@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="section post">
+  <div class="inner">
+    <div class="wrap">
+      <section class="post">
+        <header>
+          <span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+          <h2>{{ page.postTitle }}</h2>
+          <span class="author">Posted by {{ page.author }}</span>
+          <div class="social-share">
+            <a href="http://twitter.com/home?status={{ page.postTitle }}+{{ page.url | prepend: site.baseurl }}" onclick="window.open(this.href, '_blank', 'width=500,height=400');return false;" class="twitter">Twitter</a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl }}&title={{ page.postTitle }}&source={{ site.domain }}" onclick="window.open(this.href, '_blank', 'width=500,height=400');return false;" class="linkedin">LinkedIn</a>
+          </div>
+        </header>
+        <article>
+          {{ page.content }}
+        </article>
+      </section>
+    </div>
+  </div>
+</div>

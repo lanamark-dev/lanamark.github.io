@@ -1,0 +1,134 @@
+.contact-form {
+  margin: 60px 0;
+  width: 100%;
+
+  input,
+  textarea,
+  select {
+    display: block;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border: 1px solid #94a5d1;
+    color: #72767f;
+    #font .aktiv(1.8rem, 300, 1.8rem);
+    line-height: 2rem;
+
+    &:focus {
+      outline: none;
+      border-color: #21276d;
+    }
+
+    &.two {
+      border: 1px solid #9ea5af;
+
+      &:focus {
+        border-color: #444;
+      }
+    }
+  }
+
+  input,
+  select {
+    height: 3.8rem;
+  }
+
+   textarea {
+    padding: 10px;
+  }
+
+  .button-form {
+    width: 140px;
+    height: 52px;
+    margin: auto;
+    margin-top: 20px;
+    #font .aktiv(1.6em, 500);
+    position: relative;
+    border-radius: 3px;
+    transition: all .4s ease;
+
+    &.one {
+      background: #F8902B;
+      border: 1px solid #F8902B;
+      color: #fff;
+
+      &:hover, &:focus, &:active {
+       background-color: #FFFFFF;
+       color: #F8902B;
+      }
+    }
+
+    &.two {
+      background: #ffffff;
+      border: 1px solid #F8902B;
+      color: #F8902B;
+
+      &:hover, &:focus, &:active {
+        background-color: #F8902B;
+        color: #FFFFFF;
+      }
+    }
+
+    &.three {
+      color: #ffffff;
+      background-color: #F8902B;
+      border: 2px solid #ffffff;
+
+      &:hover, &:focus, &:active {
+        background-color: #e2760c;
+        border-color: #e2760c;
+      }
+    }
+
+    &.four {
+      border: 2px solid #F8902B;
+      color: #ffffff;
+      background-color: transparent;
+
+      &:hover, &:focus, &:active {
+        color: #F8902B;
+      }
+    }
+
+    &.five {
+      background-color: #9ea5af;
+      border: 1px solid #f8902b;
+      color: #ffffff;
+
+      &:hover, &:focus, &:active {
+        background-color: #f2f3f7;
+        color: #F8902B;
+      }
+    }
+  }
+
+  &.horizontal {
+    text-align: center;
+
+    input, .button-form {
+      display: inline-block;
+    }
+
+    input,
+    select {
+      margin-right: 20px;
+      height: 52px;
+    }
+  }
+
+  @media (max-width: 768px){
+    input,
+    textarea,
+    select {
+      width: 100%;
+    }
+
+    &.horizontal {
+      input, .button-form {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+  <header class="section header {{ page.headerClass }}">
+    <div class="inner">
+      <div class="navigation" id="navigation">
+        <div class="nav-inner">
+          <div class="brand">
+              <a href="{{ site.baseurl }}/" class="logo">{{ site.author}}</a>
+          </div>
+          <div class="nav" id="nav">
+            <span class="responsive" id="menu-link">Menu</span>
+            <ul class="items">
+              <li><a href="{{ site.baseurl }}/features.html">Features</a></li>
+              <li><a href="{{ site.baseurl }}/pricing.html">Pricing</a></li>
+              <li class="more last">
+                <span class="toggle">More</span>
+                <div class="hidden-links">
+                  <div class="nav">
+                    <ul>
+                      <li><a href="{{ site.baseurl }}/netapp.html">NetApp Lanamark One</a></li>
+                      <li class="last"><a href="{{ site.baseurl }}/about-us.html">About Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1>
+        {% if page.url contains 'blog' %}
+          Blog
+          <small>Have question?</small>
+        {% else %}
+          {{ page.title }}
+          <small>{{ page.subtitle }}</small>
+        {% endif %}
+      </h1>
+      {% if page.path == "index.html" %}
+      <div class="actions">
+        <a href="{{ site.baseurl }}/features" class="button main bigger"><span>Lanamark One Features</span></a>
+        <a href="{{ site.baseurl }}/netapp" class="button secondary bigger"><span>NetApp Lanamark One</span></a>
+      </div>
+      {% endif %}
+    </div>
+  </header>

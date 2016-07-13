@@ -1,115 +1,115 @@
 .about {
-	.promo-panel {
-		padding: 116px 0;
-		background: none;
-		text-align: left;
-		border-bottom: 1px solid #edeff1;
+  .promo-panel {
+    padding: 116px 0;
+    background: none;
+    text-align: left;
+    border-bottom: 1px solid #edeff1;
 
-		.wrap {
-			width: 946px;
-			position: relative;
-		}
+    .wrap {
+      width: 946px;
+      position: relative;
+    }
 
-		.title {
-			width: 78%;
-			padding: 30px 7% 30px 0;
-			#font .nimbus(16, 400, 1.4em);
-			color: #818892;
-			border-right: 1px solid #edeff1;
-		}
-		.button {
-			color: #818892;
-			position: absolute;
-		    top: 50%;
-		    right: 0;
-		    margin-top: -30px;
-		}
+    .title {
+      width: 78%;
+      padding: 30px 7% 30px 0;
+      #font .nimbus(16, 400, 1.4em);
+      color: #818892;
+      border-right: 1px solid #edeff1;
+    }
+    .button {
+      color: #818892;
+      position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -30px;
+    }
 
-		@media (max-width: 1110px){
-			.wrap {
-				width: 100%;
-			}
-		}
-		@media (max-width: 960px){
-			padding: 80px;
+    @media (max-width: 1110px){
+      .wrap {
+        width: 100%;
+      }
+    }
+    @media (max-width: 960px){
+      padding: 80px;
 
-			.title {
-				width: 100%;
-				border-right: 0;
-				padding-right: 0;
-				text-align: center;
-			}
-			.call-to-action.to-right {
-				text-align: center;
-			}
-			.button {
-				position: relative;
-				top: auto;
-				right: auto;
-				margin-top: 0;
-				margin: auto;
-			}
-		}
-		@media (max-width: 600px){
-			padding: 40px 0 60px;
-		}
-	}
+      .title {
+        width: 100%;
+        border-right: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+      .call-to-action.to-right {
+        text-align: center;
+      }
+      .button {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 0;
+        margin: auto;
+      }
+    }
+    @media (max-width: 600px){
+      padding: 40px 0 60px;
+    }
+  }
 
-	.key-features {
-		padding-top: 100px;
-	}
+  .key-features {
+    padding-top: 100px;
+  }
 
-	&.pricing.netapp {
-		.netapp-tools {
-			padding-top: 0;
-			border-top: 0;
-			border-bottom: 0;
-			background: none;
+  &.pricing.netapp {
+    .netapp-tools {
+      padding-top: 0;
+      border-top: 0;
+      border-bottom: 0;
+      background: none;
 
-			.wrap {
-				width: 900px;
-				margin: auto;
-			}
+      .wrap {
+        width: 900px;
+        margin: auto;
+      }
 
-			.columns {
-				.column {
-					&:last-child {
-						border-left: 0;
-					}
-				}
-			}
+      .columns {
+        .column {
+          &:last-child {
+            border-left: 0;
+          }
+        }
+      }
 
-			@media (max-width: 1090px){
-				.wrap {
-					width: 100%;
-				}
-			}
-		}
-	}
+      @media (max-width: 1090px){
+        .wrap {
+          width: 100%;
+        }
+      }
+    }
+  }
 
-	.maps {
-		overflow: hidden;
+  .maps {
+    overflow: hidden;
 
-		.map {
-			display: inline-block;
-			.size(50%, 280px);
-			text-indent: -9999;
-			overflow: hidden;
+    .map {
+      display: inline-block;
+      .size(50%, 280px);
+      text-indent: -9999;
+      overflow: hidden;
 
-			&--left-side {
-				float: left;
-				background: url(../images/maps/toronto.jpg) repeat center center;
-				.background-size(cover);
-			}
-			&--right-side {
-				float: right;
-				background: url(../images/maps/brno.jpg) repeat center center;
-				.background-size(cover);
-			}
-		}
+      &--left-side {
+        float: left;
+        background: url(../images/maps/toronto.jpg) repeat center center;
+        .background-size(cover);
+      }
+      &--right-side {
+        float: right;
+        background: url(../images/maps/brno.jpg) repeat center center;
+        .background-size(cover);
+      }
+    }
 
-		@media (max-width: 600px){
-			display: none;
-		}
-	}
+    @media (max-width: 600px){
+      display: none;
+    }
+  }
 }

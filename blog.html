@@ -1,0 +1,28 @@
+---
+layout: default
+headerClass: blog
+title: Blog
+subtitle: Have a questions?
+---
+
+<div class="section blog">
+  <div class="inner">
+    <div class="wrap">
+      {% for post in site.posts %}
+        <section class="post">
+          <header>
+            <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="title" href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.postTitle }}</h2></a>
+            <span class="author">Posted by {{ post.author }}</span>
+          </header>
+          <article>
+            <p>{{ post.remark }}</p>
+          </article>
+          <footer>
+            <div class="read-more"><a href={{ post.url | prepend: site.baseurl }} class="button secondary">Read more...</a></div>
+          </footer>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>

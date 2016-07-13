@@ -1,0 +1,12 @@
+{% for quote in site.pages %}
+  {% if quote.type == 'quote' and quote.id == include.id %}
+    <div class="section testimonial">
+      <div class="inner">
+        <div class="wrap">
+          <p class="quote">{{ quote.text }}</p>
+          <span class="customer">{{ quote.customer }}</span>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,43 @@
+{% for feature in site.pages %}
+  {% if feature.type == 'feature' and feature.id == include.id %}
+    <div class="section key-features feature {% if feature.first == true %} first-feature {% endif %}" id={{ feature.id }}>
+      <div class="inner">
+        <div class="wrap">
+          {% if feature.icon  %}<i class="icon {{ feature.icon }}"></i>{% endif s%}
+          <h2>
+            {{ feature.title }}
+            {% if feature.subtitle  %}<small>{{ feature.subtitle }}</small>{% endif s%}
+          </h2>
+          {% if feature.image  %}
+            <img class="preview" src={{ feature.image }} alt="">
+          {% endif %}
+          <div class="data-wrap">
+            <ul>
+              {% for section in feature.sections %}
+                <li {% if section.lastLine == true %}class="last-line"{% endif %}>
+                  {% if section.icon  %}<i class="icon {{ section.icon }}"></i>{% endif s%}
+                  <h3>{{ section.header }}</h3>
+                  <p>{{ section.text }}</p>
+                  {% if section.url  %}
+                    <a href={{ section.url | prepend: site.baseurl }} class="button learn-more">Learn More <span class="arrow"></a>
+                  {% endif %}
+                  {% if section.columns  %}
+                    <div class="columns columns--two list">
+                      {% for column in section.columns %}
+                        <div class="column">
+                          {% for item in column %}
+                            <p>{{ item }}</p>
+                          {% endfor %}
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

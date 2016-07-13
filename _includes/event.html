@@ -1,0 +1,14 @@
+{% for event in site.pages %}
+  {% if event.type == 'event' and event.id == include.id %}
+    <div class="section events">
+      <div class="inner">
+        <div class="wrap">
+          <span class="title">{{ event.title }}</span>
+          <div class="event">
+            <h3>{{ event.text }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
