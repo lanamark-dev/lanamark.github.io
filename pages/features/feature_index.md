@@ -16,4 +16,9 @@ sections:
     text: Design cost-optimized, quotable cloud and storage solutions using real workload assessment data.
     url: "/features.html#design-automation"
     lastLine: true
+  - header: Channel Partner Ready
+    icon: partner
+    text: Sponsor channel partners to use Lanamark One for accelerating design and delivery of your solutions and services.
+    url: "/features.html#channel-partner"
+    lastLine: true
 ---

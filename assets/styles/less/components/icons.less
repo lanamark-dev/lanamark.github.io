@@ -2,7 +2,8 @@
   display: inline-block;
   .square(60px);
   background: url(../images/icons@2x.png) no-repeat 0 0;
-  .background-size(515px 60px);
+  //.background-size(515px 60px);
+  .background-size(578px 60px);
 
   &.infrastructure {
 
@@ -35,15 +36,19 @@
   &.devices {
     background-position: -455px 0;
   }
+
+  &.partner {
+    background-position: -517px 0;
+  }
 }
 
 @media (max-width: 920px){
   .icon {
     .square(40px);
-    .background-size(345px 40px);
+    .background-size(385px 40px);
 
     &.hardware {
-      background-position: -131px 0;
+      background-position: -130px 0;
     }
 
     &.automation {
@@ -68,6 +73,10 @@
 
     &.devices {
       background-position: -305px 0;
+    }
+
+    &.partner {
+      background-position: -344px 0;
     }
   }
 }
