@@ -12,6 +12,6 @@ prices:
     units: 50
   - header: Gold
     cost: $75,000
-    features: [ Workload Assessment, Hardware Asset Intelligence, Design Automation ]
+    features: [ Workload Assessment, Hardware Asset Intelligence, Channel Partner Ready ]
     units: 200
 ---

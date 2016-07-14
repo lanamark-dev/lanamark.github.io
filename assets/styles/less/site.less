@@ -52,33 +52,36 @@ section {
   }
 }
 
-// .site-wrapper {
-//     .size(100%, auto);
-//     position: relative;
-//     overflow: hidden;
-// }
+.social-media-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 30%;
+  z-index: 9999;
 
-// .section {
-//     .size(100%, auto);
+  a {
+    opacity: 0.5;
+    margin: 5px;
+    display: block;
+    .square(42px);
+    background-color: #F98327;
+    margin-right: 8px;
+    .rounded(3px);
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .transition(all .4s ease);
 
-//     &.features {
-//         height: auto;
-//     }
-// }
+    &.twitter {
+      background-image: url(../images/twitter-w.png);
+    }
+    &.linkedin {
+      background-image: url(../images/linkedin-w.png);
+    }
 
-// .inner {
-//     .size(960px, auto);
-//     margin: 0 auto;
-//     overflow: hidden;
-
-//     @media (max-width: 1054px) {
-//         width: 100%;
-//         padding: 0 40px;
-//     }
-//     @media (max-width: 470px) {
-//         padding: 0 30px;
-//     }
-//     @media (max-width: 420px) {
-//         padding: 0 20px;
-//     }
-// }
+    &:hover {
+      opacity: 1;
+      //background-color: darken(#EDEFF2, 6%);
+    }
+  }
+}
