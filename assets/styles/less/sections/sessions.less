@@ -1,78 +1,91 @@
 .sessions {
-  padding-bottom: 78px;
-  border-bottom: 1px solid #f2f2f2;
-  background: #ffffff;
+  .inner {
+    width: 100%;
+    margin: 0 auto;
 
-  p {
-    color: #818892;
-    #font .nimbus(16, 400, 1.4em);
-    margin-top: 40px;
-  }
 
-  h2 {
-    #font .size(49, 1.2em);
-    font-weight: 400;
-    letter-spacing: .02em;
-    color: #21276d;
-
-    small {
-      display: inline-block;
-      margin-top: 12px;
-      #font .nimbus(20, 400, 1.4em);
-      color: #9EA5AF;
-      letter-spacing: 0.01em;
+    h1 {
+      color: #21276d;
+      letter-spacing: .02em;
+      #font .aktiv(49, 400, 50px);
+      margin: 49px 0;
     }
-  }
 
-  ul {
-    margin-top: 42px;
-    position: relative;
-    overflow: hidden;
-    margin: 73px 0 0;
+    @media (max-width: 1024px){
+      padding: 0;
+    }
 
-    li {
-      min-height: 193px;
-      height: auto;
-      padding: 30px 0 0 70px;
-      margin-bottom: 10px;
+    .wrap {
+      width: 942px;
+      margin: auto;
+      padding: 0;
 
-      h3 {
-        position: relative;
+      @media (max-width: 1024px){
+        width: auto;
+        padding: 0 20px;
+      }
 
-        &:after {
-          display: block;
-          content: "";
-          position: absolute;
-          top: 19px;
-          left: -21px;
-          width: 2px;
-          height: 20px;
-          background-color: #F98327;
+      .session {
+        padding: 10px 40px;
+        border: 1px solid #c9c9c9;
+        background: #fafafa;
+        margin: 50px 0;
+        text-align: left;
+
+        @media (max-width: 768px){
+          padding: 20px;
         }
-      }
 
-      &:nth-child(odd) {
-          padding: 30px 30px 0 21px;
-      }
+        > header {
+          h2 {
+            color: #21276d;
+            #font .aktiv(28, 500, 36px);
+            margin: 30px 0;
+          }
 
-      .columns {
-        .column {
-          p {
-            padding: 0;
-            margin-top: 0;
+          .code {
+            #font .nimbus(16, 700, 25px);
+            color: #222;
+            display: block;
+            margin-top: 20px;
+          }
+        }
+
+        > article {
+          > p {
             color: #818892;
-            text-align: left;
+            #font .nimbus(16, 300, 1.5em);
+          }
+        }
+
+        .data-wrap {
+          margin-top: 20px;
+          height: 100px;
+
+          ul {
+            li {
+              //color: #818892;
+              width: 50%;
+              float: left;
+
+              h3 {
+                #font .nimbus(16, 300, 1.5em);
+                color: #222;
+              }
+
+              .list {
+                margin-left: 20px;
+                margin-top: 10px;
+
+                p {
+                  #font .nimbus(16, 300, 1.5em);
+                  color: #818892;
+                }
+              }
+            }
           }
         }
       }
-      .list {
-        margin-top: 30px;
-      }
     }
   }
-
-  .data-wrap {
-    position: relative;
-  }
-
 }
