@@ -1,4 +1,15 @@
 .sessions {
+
+  &.main {
+    background-color: #F9FAFB;
+    padding: 40px 0;
+  }
+
+  &.title {
+    padding: 0;
+    padding-top: 50px;
+  }
+
   .inner {
     width: 100%;
     margin: 0 auto;
@@ -7,8 +18,14 @@
     h1 {
       color: #21276d;
       letter-spacing: .02em;
-      #font .aktiv(49, 400, 50px);
+      #font .aktiv(36, 400, 50px);
       margin: 49px 0;
+    }
+
+    h2 {
+      color: #818892;
+      #font .aktiv(30, 500, 1.2em);
+      letter-spacing: 0.015em;
     }
 
     @media (max-width: 1024px){
@@ -26,10 +43,8 @@
       }
 
       .session {
-        padding: 10px 40px;
-        border: 1px solid #c9c9c9;
-        background: #fafafa;
-        margin: 50px 0;
+        padding: 0 40px;
+        margin: 0;
         text-align: left;
 
         @media (max-width: 768px){
@@ -39,7 +54,7 @@
         > header {
           h2 {
             color: #21276d;
-            #font .aktiv(28, 500, 36px);
+            #font .aktiv(28, 400, 36px);
             margin: 30px 0;
           }
 
@@ -59,27 +74,45 @@
         }
 
         .data-wrap {
-          margin-top: 20px;
-          height: 100px;
+          margin-top: 10px;
+          height: 180px;
 
           ul {
+
             li {
               //color: #818892;
-              width: 50%;
+              width: 40%;
               float: left;
+
+              &:nth-child(even) {
+                width: 60%;
+              }
 
               h3 {
                 #font .nimbus(16, 300, 1.5em);
                 color: #222;
+                margin: 10px 0;
               }
 
               .list {
-                margin-left: 20px;
                 margin-top: 10px;
 
                 p {
                   #font .nimbus(16, 300, 1.5em);
                   color: #818892;
+                  padding-left: 30px;
+
+                  &.schedule {
+                    background: url(../images/calendar-2.png) no-repeat 0 0;
+                    .background-size(18px 18px);
+                    background-position-y: 1px;
+                  }
+
+                  &.presenter {
+                    background: url(../images/business-statistics-2.png) no-repeat 0 0;
+                    .background-size(18px 18px);
+                    background-position-y: 1px;
+                  }
                 }
               }
             }

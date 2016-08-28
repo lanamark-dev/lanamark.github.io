@@ -21,7 +21,7 @@
                       <div class="list">
                         {% for column in section.columns %}
                           {% for item in column %}
-                            <p>{{ item }}</p>
+                            <p class="{{ section.class }}">{{ item }}</p>
                           {% endfor %}
                         {% endfor %}
                       </div>
