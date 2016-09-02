@@ -8,6 +8,7 @@
             {{ feature.title }}
             {% if feature.subtitle  %}<small>{{ feature.subtitle }}</small>{% endif s%}
           </h2>
+          {{ feature.content }}
           {% if feature.image  %}
             <img class="preview" src={{ feature.image }} alt="">
           {% endif %}
