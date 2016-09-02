@@ -2,6 +2,7 @@
 type: feature
 id: netapp
 title: Design Automation
+subtitle: Unified FlexPod and NetApp storage design, configuration and pricing for NetApp SEs and partners worldwide
 image: "./assets/images/product-preview.png"
 icon: automation
 sections:
