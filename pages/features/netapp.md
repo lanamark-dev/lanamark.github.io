@@ -3,7 +3,7 @@ type: feature
 id: netapp
 title: Design Automation
 subtitle: Unified FlexPod and NetApp storage design, configuration and pricing for NetApp SEs and partners worldwide
-image: "./assets/images/product-preview.png"
+slider: true
 icon: automation
 sections:
   - header: "NetApp Storage Design Automation"
@@ -13,7 +13,6 @@ sections:
     text: "Generate cost-optimized FlexPod Datacenter solutions with Cisco Nexus 5000 and 9000 switches."
     lastLine: true
 ---
-
 <section>
   <header><h3>Benefits</h3></header>
   <article>
@@ -47,3 +46,4 @@ sections:
     <p>Preview at <a href="netapp/insight-las-vegas-2016.html" class="las-vegas">NetApp Insight in Las Vegas</a> and general availability in October 2016.</p>
   </article>
 </section>
+
