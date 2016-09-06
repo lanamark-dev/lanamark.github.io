@@ -348,8 +348,14 @@
     }
   }
 
+  .one {
+    display: block;
+    width: 300px;
+    margin: 50px auto 0;
+  }
+
   .actions {
-    margin: 118px 0 0;
+    margin: 50px 0 0;
     display: inline-block;
     position: relative;
     white-space: nowrap;
@@ -386,10 +392,21 @@
 
     > div {
       width: 300px;
-      display: inline-block;
+      display: block;
+      float: left;
+      margin-top: 20px;
 
-      h3 {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      & > h3, a > h3 {
         #font .nimbus(24, 300, 1.5em);
+
+        &:hover {
+          color: #F8902B;
+        }
 
         small {
           #font .size(18, 1.2em);
@@ -535,7 +552,11 @@
 
     .actions {
       //margin-top: 70px;
-      margin-top: 40px;
+      margin-top: 30px;
+    }
+
+    .one {
+      margin-top: 10px;
     }
   }
 
@@ -553,26 +574,21 @@
       }
 
       .button {
-        width: auto;
+        //width: auto;
         display: block;
-
-        &.main {
-          margin-right: 0;
-          margin-bottom: 57px;
-        }
-        &.secondary {
-          margin-left: 0;
-        }
+        margin: auto;
       }
 
       //&.netapp {
         > div {
           display: block;
+          float: none;
 
           &.left {
             text-align: center;
             padding-right: 0;
             padding-bottom: 57px;
+            margin-top: 0;
           }
 
           &.right {
