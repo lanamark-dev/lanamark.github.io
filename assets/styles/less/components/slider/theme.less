@@ -107,11 +107,11 @@
   }
 
   .flex-prev {
-    left: -50px;
+    left: 0;
   }
 
   .flex-next {
-    right: -50px;
+    right: 2px;
     text-align: right;
   }
 
@@ -135,7 +135,7 @@
     .flex-next {
       opacity: 0.7;
       //right: 10px;
-      right: 0;
+      right: 2px;
 
       &:hover{
         opacity: 1;
@@ -237,7 +237,8 @@
     display: block;
    // background: #666;
    // background: rgba(0,0,0,0.5);
-    border: 2px solid #F8902B;
+    //border: 2px solid #F8902B;
+    background: radial-gradient(#818892, #000);
     cursor: pointer;
     text-indent: -9999px;
 
@@ -253,7 +254,8 @@
     }
 
     &.flex-active {
-      background: #F8902B;
+      //background: #F8902B;
+      background: radial-gradient(#F8902B, #000);
       //border: 2px solid #fff;
 
       //background: #000;

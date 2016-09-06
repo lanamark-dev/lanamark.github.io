@@ -215,12 +215,12 @@
   }
 
   .sliderBlock {
-    width: 800px;
-    height: 458px;
-    padding: 29px 104px 45px 98px;
-    background-image: url(../images/product-screen.png);
+    width: 1024px;
+    height: 571px;
+    padding: 33px 146px 74px 138px;
+    background-image: url(../images/product-screen1.png);
     .background-size(cover);
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
 
     .slide > img {
       margin: 0 !important;
@@ -228,22 +228,30 @@
     }
 
     .flex-control-nav {
-      bottom: -18px;
+      bottom: -35px;
     }
 
     @media (max-width: 938px){
-      .size(600px, 344px);
-      padding: 22px 78px 34px 74px;
+      .size(768px, 428px);
+      padding: 25px 110px 56px 104px;
+
+      .flex-control-nav {
+        bottom: -25px;
+      }
     }
 
     @media (max-width: 738px){
-      .size(400px, 229px);
-      padding: 15px 52px 23px 49px;
+      .size(512px, 283px);
+      padding: 17px 73px 37px 69px;
+
+      .flex-control-nav {
+        bottom: -20px;
+      }
     }
 
     @media (max-width: 440px){
-      .size(200px, 115px);
-      padding: 7px 26px 12px 25px;
+      .size(256px, 142px);
+      padding: 9px 37px 17px 35px;
 
       .flex-control-nav {
         display: none;

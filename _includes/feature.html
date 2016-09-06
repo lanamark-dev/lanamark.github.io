@@ -12,9 +12,6 @@
           {% if feature.image  %}
             <img class="preview" src={{ feature.image }} alt="">
           {% endif %}
-          {% if feature.slider  %}
-              {% include slider.html %}
-          {% endif %}
           <div class="data-wrap">
             <ul>
               {% for section in feature.sections %}
