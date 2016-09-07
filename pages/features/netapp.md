@@ -14,7 +14,7 @@ sections:
     lastLine: true
 ---
 <section>
-  <header><h3>Benefits</h3></header>
+  <header><h2>Benefits</h2></header>
   <article>
     <div class="columns columns--two">
       <div class="column">
@@ -41,7 +41,7 @@ sections:
   </article>
 </section>
 <section>
-  <header><h3>Availability</h3></header>
+  <header><h2>Availability</h2></header>
     <article>
     <p>Preview at <a href="netapp/insight-las-vegas-2016.html" class="las-vegas">NetApp Insight in Las Vegas</a> and general availability in October 2016.</p>
   </article>

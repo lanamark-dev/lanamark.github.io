@@ -1,0 +1,65 @@
+section {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+
+  > header {
+    > h2 {
+      color: #21276d;
+      #font .aktiv(28, 400, 36px);
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #818892;
+      #font .aktiv(18, 400, 24px);
+      margin-bottom: 10px;
+    }
+
+    .code {
+      #font .nimbus(16, 300, 25px);
+      color: #222;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  > article {
+    p {
+      color: #818892 !important;
+      #font .nimbus(16, 300, 1.5em);
+      margin-bottom: 10px;
+
+      &.check {
+        background: url(../images/check-circle-2.png) no-repeat 0 0;
+        .background-size(18px 18px);
+        background-position-y: 4px;
+        text-align: left;
+        padding-left: 40px !important;
+      }
+
+      span.accent {
+        display: block;
+        font-weight: 500;
+        color: #000;
+      }
+
+      .las-vegas {
+        color: #F98327;
+        text-decoration: none;
+        font-weight: 500;
+       }
+    }
+
+    @media (max-width: 830px){
+      .columns {
+        .column {
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

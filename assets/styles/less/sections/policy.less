@@ -1,0 +1,43 @@
+.policy {
+  &.title {
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1024px){
+      padding: 0;
+    }
+
+    .wrap {
+      width: 942px;
+      margin: auto;
+      padding: 0;
+
+      > h2 {
+        color: #818892;
+        #font .aktiv(48, 400, 1.2em);
+        letter-spacing: 0.015em;
+      }
+
+      @media (max-width: 1024px) {
+        width: auto;
+        padding: 0 20px;
+      }
+
+      @media (max-width: 600px) {
+        > h2 {
+          #font .size(30, 1.2em);
+
+          small {
+            width: 100%;
+            #font .size(18, 1.5em);
+          }
+        }
+      }
+    }
+  }
+}

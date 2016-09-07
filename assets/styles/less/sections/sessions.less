@@ -22,12 +22,6 @@
       margin: 49px 0;
     }
 
-    h2 {
-      color: #818892;
-      #font .aktiv(48, 400, 1.2em);
-      letter-spacing: 0.015em;
-    }
-
     @media (max-width: 1024px){
       padding: 0;
     }
@@ -37,8 +31,18 @@
       margin: auto;
       padding: 0;
 
+      > h2 {
+        color: #818892;
+        #font .aktiv(48, 400, 1.2em);
+        letter-spacing: 0.015em;
+      }
+
       @media (max-width: 1024px){
         width: auto;
+        padding: 0 60px;
+      }
+
+      @media (max-width: 960px){
         padding: 0 20px;
       }
 
@@ -47,41 +51,11 @@
         margin-bottom: 48px;
       }
 
-      .session {
-        padding: 0 40px;
-        margin: 0;
-        text-align: left;
-
-        @media (max-width: 768px){
-          padding: 20px;
-        }
-
-        > header {
-          h2 {
-            color: #21276d;
-            #font .aktiv(28, 400, 36px);
-            margin-top: 30px;
-            margin-bottom: 10px;
-          }
-
-          .code {
-            #font .nimbus(16, 300, 25px);
-            color: #222;
-            display: block;
-            margin-top: 10px;
-          }
-        }
-
-        > article {
-          > p {
-            color: #818892;
-            #font .nimbus(16, 300, 1.5em);
-          }
-        }
+      > section {
 
         .data-wrap {
           margin-top: 10px;
-          height: 180px;
+          min-height: 180px;
 
           ul {
 
