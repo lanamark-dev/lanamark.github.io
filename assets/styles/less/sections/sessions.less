@@ -1,51 +1,11 @@
 .sessions {
-
-  &.main {
-    background-color: #F9FAFB;
-    padding: 40px 0;
-  }
-
-  &.title {
-    padding: 0;
-    padding-top: 50px;
-  }
-
   .inner {
-    width: 100%;
-    margin: 0 auto;
-
-
-    h1 {
-      color: #21276d;
-      letter-spacing: .02em;
-      #font .aktiv(36, 400, 50px);
-      margin: 49px 0;
-    }
 
     @media (max-width: 1024px){
       padding: 0;
     }
 
     .wrap {
-      width: 942px;
-      margin: auto;
-      padding: 0;
-
-      > h2 {
-        color: #818892;
-        #font .aktiv(48, 400, 1.2em);
-        letter-spacing: 0.015em;
-      }
-
-      @media (max-width: 1024px){
-        width: auto;
-        padding: 0 60px;
-      }
-
-      @media (max-width: 960px){
-        padding: 0 20px;
-      }
-
       .icon {
         margin-top: 49px;
         margin-bottom: 48px;
@@ -60,7 +20,6 @@
           ul {
 
             li {
-              //color: #818892;
               width: 40%;
               float: left;
 
@@ -79,7 +38,7 @@
 
                 p {
                   #font .nimbus(16, 300, 1.5em);
-                  color: #818892;
+                  color: @grey;
                   padding-left: 30px;
 
                   &.schedule {

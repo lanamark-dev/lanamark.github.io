@@ -1,23 +1,7 @@
 .post {
 
   > .inner {
-    width: 100%;
-    margin: 0 auto;
-
-    @media (max-width: 1024px){
-      padding: 0;
-    }
-
     > .wrap {
-      width: 942px;
-      margin: auto;
-      padding: 0;
-
-      @media (max-width: 1024px){
-        width: auto;
-        padding: 0 20px;
-      }
-
       > .post {
         border: 1px solid #c9c9c9;
         background: #fafafa;
@@ -42,7 +26,7 @@
           }
 
           h2 {
-            color: #21276d;
+            color: @navy;
             #font .aktiv(32, 700, 30px);
             margin: 10px 0;
           }
@@ -90,7 +74,7 @@
         > article {
           > p {
             margin-bottom: 60px;
-            color: #818892;
+            color: @grey;
             #font .nimbus(16, 300, 1.5em);
           }
         }

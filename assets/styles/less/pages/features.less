@@ -35,7 +35,7 @@
           display: inline-block;
           margin-top: 24px;
           #font .nimbus(16, 400, 1.4em);
-          color: #818892;
+          color: @grey;
           text-decoration: none;
         }
 
@@ -79,21 +79,6 @@
       margin-bottom: 48px;
     }
 
-    .inner > .wrap > h2 {
-      #font .size(49, 1.2em);
-      font-weight: 400;
-      letter-spacing: .02em;
-      color: #21276d;
-
-      small {
-        display: inline-block;
-        margin-top: 12px;
-        #font .nimbus(24, 400, 1.4em);
-        color: #9EA5AF;
-        letter-spacing: 0.01em;
-      }
-    }
-
     h3 {
       position: relative;
 
@@ -126,7 +111,7 @@
           .column {
             p {
               padding: 0;
-              color: #818892;
+              color: @grey;
               text-align: left;
             }
           }
@@ -221,12 +206,6 @@
       }
     }
 
-    @media (max-width: 840px){
-      .inner > .wrap > h2 {
-        #font .size(40, 1.2em);
-      }
-    }
-
     @media (max-width: 760px){
       padding-bottom: 35px;
 
@@ -295,16 +274,6 @@
               width: 50%;
             }
           }
-        }
-      }
-    }
-
-    @media (max-width: 600px){
-      .inner > .wrap > h2 {
-        #font .size(30, 1.2em);
-
-        small {
-          #font .size(18, 1.5em);
         }
       }
     }

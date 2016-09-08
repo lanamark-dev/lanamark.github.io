@@ -1,0 +1,85 @@
+.section {
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+
+    .wrap {
+      width: 942px;
+      margin: auto;
+      padding: 0;
+
+      > h2 {
+        color: @navy;
+        #font .aktiv(48, 400, 1.2em);
+        letter-spacing: 0.015em;
+
+        small {
+          margin-top: 11px;
+          #font .nimbus(20, 300, 1.5em);
+          color: #9EA5AF;
+          letter-spacing: 0.015em;
+        }
+      }
+
+      > h3 {
+        margin-bottom: 50px;
+        #font .size(30, 1.4em);
+        font-weight: 500;
+        color: @navy;
+      }
+
+      @media (max-width: 1024px){
+        width: auto;
+        padding: 0 60px;
+      }
+
+      @media (max-width: 960px){
+        padding: 0 20px;
+
+        > h2 {
+          #font .size(40, 1.2em);
+
+          small {
+            //width: 80%;
+          }
+        }
+      }
+
+      @media (max-width: 600px){
+        > h2 {
+          #font .size(30, 1.2em);
+
+          small {
+            width: 100%;
+            #font .size(18, 1.5em);
+          }
+        }
+
+        > h3 {
+          #font .size(26, 1.2em);
+        }
+      }
+    }
+  }
+
+  &.sessions,
+  &.alliances,
+  &.policy {
+    .inner > .wrap > h2 {
+      color: @grey;
+    }
+  }
+
+  &.footer,
+  &.netapp-tools {
+    .inner {
+      width: 1360px;
+      height: auto;
+
+      @media (max-width: 1440px){
+        width: 100%;
+        padding: 0 40px;
+      }
+    }
+  }
+}
