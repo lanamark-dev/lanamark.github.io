@@ -378,6 +378,10 @@
       background: #ffffff;
     }
 
+    &.demo:after {
+      display: none;
+    }
+
     .button {
       width: 220px;
       display: block;
@@ -422,6 +426,23 @@
       &.right {
         text-align: left;
         padding-left: 50px;
+      }
+
+     &.center {
+        width: 400px;
+        float: none;
+
+        a > h3 {
+          color: #F8902B;
+
+          small {
+            margin-top: 18px;
+          }
+
+          &:hover {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -574,29 +595,34 @@
       }
 
       .button {
-        //width: auto;
         display: block;
         margin: auto;
       }
 
-      //&.netapp {
-        > div {
-          display: block;
-          float: none;
+      > div {
+        display: block;
+        float: none;
 
-          &.left {
-            text-align: center;
-            padding-right: 0;
-            padding-bottom: 57px;
-            margin-top: 0;
-          }
+        &.left {
+          text-align: center;
+          padding-right: 0;
+          padding-bottom: 57px;
+          margin-top: 0;
+        }
 
-          &.right {
-            text-align: center;
-            padding-left: 0;
+        &.right {
+          text-align: center;
+          padding-left: 0;
+        }
+
+        &.center {
+          width: 100%;
+
+          a > h3 {
+            #font .size(20, 1.2em);
           }
         }
-      //}
+      }
     }
   }
 
@@ -627,6 +653,20 @@
       .logo {
         .size(140px, 25px);
         .background-size(140px 25px);
+      }
+    }
+
+    .actions {
+      > div {
+        &.center {
+          a > h3 {
+            #font .size(16, 1.2em);
+
+            small {
+              #font .size(12, 1.2em);
+            }
+          }
+        }
       }
     }
   }

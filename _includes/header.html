@@ -34,6 +34,17 @@
           <small>{{ page.subtitle }}</small>
         {% endif %}
       </h1>
+      {% if page.path == "netapp.html" %}
+        <div class="actions netapp demo">
+          <div class="center">
+            <a href="https://www.youtube.com/watch?v=WaqFBnQW5v4&feature=youtu.be" target="_blank">
+              <i class="icon video"></i>
+              <h3>Demo: FlexPod Design Automation
+              <small>Stephan Stelter, NetApp</small></h3>
+            </a>
+          </div>
+        </div>
+      {% endif %}
       {% if page.path == "index.html" or page.path == "404.html" %}
      <div class="one">
         <a href="{{ site.baseurl }}/features.html" class="button main bigger"><span>Lanamark One Features</span></a>
