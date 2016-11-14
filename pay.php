@@ -5,12 +5,12 @@
 function cors() {//http://stackoverflow.com/questions/8719276/cors-with-php-headers
 
     // Allow from any origin
-    if (isset($_SERVER['https://github.com'])) {
+    /*if (isset($_SERVER['https://github.com'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['https://github.com']}"); //change {$_SERVER['HTTP_ORIGIN']} to 'http://www.yoursitehere.com'
         header('Access-Control-Allow-Credentials: true');
         header('Access-Control-Max-Age: 86400');    // cache for 1 day
     }
-
+*/
     // Access-Control headers are received during OPTIONS requests
     if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
