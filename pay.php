@@ -5,7 +5,7 @@
 function cors() {//http://stackoverflow.com/questions/8719276/cors-with-php-headers
 
     // Allow from any origin
-    if (isset($_SERVER['HTTP_ORIGIN'])) {
+    if (isset($_SERVER['https://github.com'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['https://github.com']}"); //change {$_SERVER['HTTP_ORIGIN']} to 'http://www.yoursitehere.com'
         header('Access-Control-Allow-Credentials: true');
         header('Access-Control-Max-Age: 86400');    // cache for 1 day
