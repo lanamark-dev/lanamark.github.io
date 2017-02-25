@@ -40,10 +40,3 @@ sections:
     </div>
   </article>
 </section>
-<section>
-  <header><h2>Availability</h2></header>
-    <article>
-    <p>Preview at <a href="netapp/insight-las-vegas-2016.html" class="las-vegas">NetApp Insight in Las Vegas</a> and general availability in October 2016.</p>
-  </article>
-</section>
-
