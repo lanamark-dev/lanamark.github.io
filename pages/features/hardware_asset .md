@@ -13,5 +13,5 @@ sections:
     lastLine: true
     columns:
       - [ Age, Power consumption, Warranty remaining, Carbon footprint ]
-      - [ Rack units used, Head dissipation, Form factor, Power costs ]
+      - [ Rack units used, Heat dissipation, Form factor, Power costs ]
 ---
