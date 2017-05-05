@@ -4,7 +4,7 @@ id: design-automation
 first: true
 icon: automation
 title: Design Automation
-subtitle: Design cost-optimized, quotable cloud and storage solutions using real workload assessment data.
+subtitle: Design cost-optimized, quotable cloud, converged and storage infrastructure solutions using real workload assessment data.
 sections:
   - header: Mathematical Optimization
     text: Generate cost-optimized, quotable solutions while meeting design policies and workload requirements.

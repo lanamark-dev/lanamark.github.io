@@ -13,7 +13,7 @@ sections:
     url: "/features.html#hardware-asset-intelligence"
   - header: Design Automation
     icon: automation
-    text: Design cost-optimized, quotable cloud and storage solutions using real workload assessment data.
+    text: Design cost-optimized, quotable cloud, converged and storage solutions using real workload assessment data.
     url: "/features.html#design-automation"
     lastLine: true
   - header: Channel Partner Ready
