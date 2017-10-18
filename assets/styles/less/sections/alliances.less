@@ -28,16 +28,19 @@
     overflow: hidden;
 
     &.cisco {
+      margin-right: 80px;
       background: url(../images/alliances/cisco.png) no-repeat 0 0;
       .image-size(141px, 74px);
     }
 
     &.lenovo {
+      margin-top: 15px;
       background: url(../images/alliances/lenovo.png) no-repeat 0 0;
-      .image-size(222px, 73px);
+      .image-size(152px, 50px);
     }
 
     &.netapp {
+      margin-left: 80px;
       margin-top: 15px;
       background: url(../images/alliances/netapp.png) no-repeat 0 0;
       .image-size(190px, 50px);
@@ -52,18 +55,13 @@
     }
 
     .company {
-      &.cisco {
-        .image-size(70px, 37px);
+      &.cisco, &.lenovo, &.netapp {
+        margin: 0;
       }
 
-      &.lenovo {
-        .image-size(111px, 37px);
-      }
-
-      &.netapp {
-        .image-size(119px, 30px);
-        margin-top: 0;
-      }
+      &.cisco  { .image-size(70px, 37px);}
+      &.lenovo { .image-size(111px, 36px); }
+      &.netapp { .image-size(119px, 30px); }
     }
   }
 
@@ -82,8 +80,8 @@
     .company {
       margin-bottom: 40px;
 
-      &.netapp {
-        margin-top: 0;
+       &.lenovo, &.netapp {
+        margin-top: 40px;
       }
     }
   }
