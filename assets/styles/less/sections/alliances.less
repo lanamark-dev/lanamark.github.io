@@ -1,3 +1,13 @@
+// Sizing shortcuts
+.image-size(@width, @height) {
+  .size(@width, @height);
+  .background-size(100% auto);
+
+  &:hover {
+    background-position: 0 calc(-@height - 1);
+  }
+}
+
 .alliances {
   padding: 108px 0 121px 0;
   background: #f1f3f5 url(../images/grey-shapes.jpg) no-repeat center center;
@@ -18,46 +28,23 @@
     overflow: hidden;
 
     &.cisco {
-      float: right;
-      margin-right: 169px;
-      .size(141px, 74px);
       background: url(../images/alliances/cisco.png) no-repeat 0 0;
-      .background-size(141px 148px);
-
-      &:hover {
-        background-position: 0 -74px;
-      }
+      .image-size(141px, 74px);
     }
-    &.netapp {
-      float: left;
-      margin-left: 146px;
-      .size(190px, 51px);
-      position: relative;
-      top: 7px;
-      background: url(../images/alliances/netapp.png) no-repeat 0 0;
-      .background-size(190px 102px);
 
-      &:hover {
-        background-position: 0 -51px;
-      }
+    &.lenovo {
+      background: url(../images/alliances/lenovo.png) no-repeat 0 0;
+      .image-size(222px, 73px);
+    }
+
+    &.netapp {
+      margin-top: 15px;
+      background: url(../images/alliances/netapp.png) no-repeat 0 0;
+      .image-size(190px, 50px);
     }
   }
 
   @media (max-width: 960px){
-    .company {
-      &.cisco {
-        float: none;
-        margin-right: 0;
-      }
-
-      &.netapp {
-        float: none;
-        margin-left: 0;
-      }
-    }
-  }
-
-  @media (max-width: 600px){
     padding: 80px 0;
 
     .columns {
@@ -66,21 +53,16 @@
 
     .company {
       &.cisco {
-        .size(100px, 52px);
-        .background-size(100% auto);
+        .image-size(70px, 37px);
+      }
 
-        &:hover {
-          background-position: 0 -53px;
-        }
+      &.lenovo {
+        .image-size(111px, 37px);
       }
 
       &.netapp {
-        .size(150px, 39px);
-        .background-size(100% auto);
-
-        &:hover {
-          background-position: 0 -39px;
-        }
+        .image-size(119px, 30px);
+        margin-top: 0;
       }
     }
   }
@@ -101,8 +83,7 @@
       margin-bottom: 40px;
 
       &.netapp {
-        top: 0;
-        margin-bottom: 0;
+        margin-top: 0;
       }
     }
   }
