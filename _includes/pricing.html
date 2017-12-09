@@ -15,15 +15,17 @@
                     <span class="month">per year</span>
                   </div>
                   {% for feature in price.features %}
-                    <div class="feature"><span>{{ feature }}</span></div>
+                    <div class="feature"><span>{{ feature }}<span></div>
                   {% endfor %}
                   <div class="signup">
                     <span class="units">{{ price.units }} Servers</span>
+                    <small>{{ price.description }} </small>
                   </div>
                 </div>
               </div>
             {% endfor %}
           </div>
+          <div class="price-footer">{{ pricing.footer }}</div>
         </div>
       </div>
     </div>
