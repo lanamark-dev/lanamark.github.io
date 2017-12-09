@@ -16,6 +16,6 @@ sections:
   - header: Physical Servers
     text: "Collect workload metrics from physical servers running Microsoft Windows and Linux operating systems."
   - header: VMware Infrastructure
-    text: "Capture compute and storage workload data from VMware vCenter Server or from VMware ESX hosts."
+    text: "Capture compute and storage workload data from VMware vCenter Server or VMware ESX hosts directly."
     lastLine: true
 ---
