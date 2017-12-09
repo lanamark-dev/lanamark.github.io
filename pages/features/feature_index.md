@@ -5,7 +5,7 @@ title: Key features
 sections:
   - header: Data Center Assessment
     icon: infrastructure
-    text: Sales-oriented data collection, analytics and reporting for IT infrastructure.
+    text: Sales-oriented data collection, analytics and reporting for physical and virtual infrastructure.
     url: "/features.html#data-center-assessment"
   - header: Hardware Asset Intelligence
     icon: hardware
