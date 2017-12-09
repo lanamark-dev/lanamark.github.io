@@ -4,7 +4,7 @@ title: Our Packages
 prices:
   - header: Bronze
     cost: $15,000
-    features: [ VMware Infrastructure Assessment ]
+    features: [ VMware Infrastructure Assessment<br>(250 VMware ESX hosts) ]
     units: 250
   - header: Silver
     cost: $45,000
