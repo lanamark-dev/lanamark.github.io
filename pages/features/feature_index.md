@@ -3,10 +3,10 @@ type: feature
 id: index
 title: Key features
 sections:
-  - header: Workload Assessment
+  - header: Data Center Assessment
     icon: infrastructure
     text: Sales-oriented data collection, analytics and reporting for IT infrastructure.
-    url: "/features.html#workload-assessment"
+    url: "/features.html#data-center-assessment"
   - header: Hardware Asset Intelligence
     icon: hardware
     text: Normalize and enrich raw hardware asset data with actionable business metrics to&nbsp;demonstrate the&nbsp;value of a technology refresh.
