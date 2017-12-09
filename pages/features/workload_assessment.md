@@ -14,8 +14,9 @@ sections:
   - header: Reporting Automation
     text: "Generate rich client-facing deliverables documenting the workload assessment and justifying capacity requirements."
   - header: Physical Infrastructure
-    text: "Collect workload metrics from physical servers running Microsoft Windows and Linux operating systems."
+    text: "Collect workload metrics from physical servers running Microsoft Windows<sup>&reg;</sup> and Linux operating systems."
+    lastLine: true
   - header: Virtual Infrastructure
-    text: "Capture compute and storage workload metrics from VMware vCenter, VMware ESX or Microsoft Hyper-V."
+    text: "Capture compute and storage workload metrics from VMware vCenter<sup>&reg;</sup>, VMware ESX<sup>&reg;</sup> or Microsoft Hyper-V<sup>&reg;</sup>."
     lastLine: true
 ---

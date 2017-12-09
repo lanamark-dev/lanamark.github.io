@@ -9,7 +9,7 @@ prices:
       Data Center Assessment<br /> <small>VMware<sup>&reg;</sup> Infrastructure</small>,
     ]
     units: 250
-    description: VMware ESX <br />&nbsp;
+    description: VMware ESX<sup>&reg;</sup> <br />&nbsp;
   - header: Silver
     cost: $45,000
     features: [
@@ -17,7 +17,7 @@ prices:
       Hardware Asset Intelligence
     ]
     units: 1,000
-    description: Physical, Microsoft<sup>&reg;</sup> Hyper-V <br /> or VMware ESX
+    description: Physical, Microsoft Hyper-V<sup>&reg;</sup> <br /> or VMware ESX
   - header: Gold
     cost: $90,000
     features: [
