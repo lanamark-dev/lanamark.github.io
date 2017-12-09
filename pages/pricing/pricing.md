@@ -3,15 +3,15 @@ type: pricing
 title: Our Packages
 prices:
   - header: Bronze
-    cost: $10,000
+    cost: $15,000
     features: [ Workload Assessment ]
-    units: 20
+    units: 250
   - header: Silver
-    cost: $25,000
+    cost: $45,000
     features: [ Workload Assessment, Hardware Asset Intelligence ]
-    units: 50
+    units: 1,000
   - header: Gold
-    cost: $75,000
+    cost: $90,000
     features: [ Workload Assessment, Hardware Asset Intelligence, Channel Partner Ready ]
-    units: 200
+    units: 3,000
 ---
