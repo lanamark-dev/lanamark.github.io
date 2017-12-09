@@ -4,7 +4,7 @@ title: Our Packages
 prices:
   - header: Bronze
     cost: $15,000
-    features: [ Workload Assessment ]
+    features: [ VMware Infrastructure Assessment ]
     units: 250
   - header: Silver
     cost: $45,000
