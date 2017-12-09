@@ -1,8 +1,8 @@
 ---
 type: feature
-id: workload-assessment
+id: datacenter-assessment
 icon: infrastructure
-title: Workload Assessment
+title: Data Center Assessment
 subtitle: Sales-oriented data collection, analytics and reporting for IT infrastructure.
 sections:
   - header: "Agent-less"
@@ -14,5 +14,11 @@ sections:
     lastLine: true
   - header: Reporting Automation
     text: "Generate rich client-facing deliverables documenting the workload assessment and justifying capacity requirements."
+    lastLine: true
+  - header: Physical Servers
+    text: "Collect workload metrics from physical machines running Microsoft Windows and Linux operating systems."
+    lastLine: true
+  - header: VMware Infrastructure
+    text: "Capture compute and storage workload data from VMware vCenter Server or from VMware ESX hosts."
     lastLine: true
 ---
