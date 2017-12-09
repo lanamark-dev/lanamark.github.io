@@ -1,6 +1,6 @@
 ---
 type: feature
-id: datacenter-assessment
+id: workload-assessment
 icon: infrastructure
 title: Data Center Assessment
 subtitle: Sales-oriented data collection, analytics and reporting for IT infrastructure.
