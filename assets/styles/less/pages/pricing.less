@@ -77,9 +77,12 @@
         .feature {
           margin: 0 28px;
           padding: 28px 0;
-          #font .aktiv(15, 400, 1.5em);
-          color: @grey;
-          border-top: 1px solid #f2f3f4;
+          //border-top: 1px solid #f2f3f4;
+          > a {
+            #font .aktiv(15, 400, 2em);
+            color: @grey;
+            text-decoration: none;
+          }
 
           strong {
             color: #F8902B;
@@ -87,7 +90,7 @@
           }
 
           small {
-            #font .aktiv(11, 400, 1.3em);
+            #font .aktiv(13, 400, 1.8em);
             color: @grey;
           }
         }

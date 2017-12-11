@@ -15,7 +15,7 @@
                     <span class="month">per year</span>
                   </div>
                   {% for feature in price.features %}
-                    <div class="feature"><span>{{ feature }}<span></div>
+                    <div class="feature"><a href={{ feature.url | prepend: site.baseurl }}>{{ feature.name }}</a><br /><small>{{ feature.description }}</small></div>
                   {% endfor %}
                   <div class="signup">
                     <span class="units">{{ price.units }} Servers</span>

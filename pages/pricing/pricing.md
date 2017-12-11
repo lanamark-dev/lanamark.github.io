@@ -5,26 +5,32 @@ footer: No additional licenses are required for virtual machines. All prices are
 prices:
   - header: Bronze
     cost: $15,000
-    features: [
-      Data Center Assessment<br /> <small>VMware<sup>&reg;</sup> Infrastructure</small>,
-    ]
+    features:
+      - name: Data Center Assessment
+        description: VMware<sup>&reg;</sup> Infrastructure
+        url: "/features.html#data-center-assessment"
     units: 250
     description: VMware ESX<sup>&reg;</sup> <br />&nbsp;
   - header: Silver
     cost: $45,000
-    features: [
-      Data Center Assessment<br /> <small>Physical and Virtual Infrastructure</small>,
-      Hardware Asset Intelligence
-    ]
+    features:
+      - name: Data Center Assessment
+        description: Physical and Virtual Infrastructure
+        url: "/features.html#data-center-assessment"
+      - name: Hardware Asset Intelligence
+        url: "/features.html#hardware-asset-intelligence"
     units: 1,000
     description: Physical, Microsoft Hyper-V<sup>&reg;</sup> <br /> or VMware ESX
   - header: Gold
     cost: $90,000
-    features: [
-      Data Center Assessment<br /> <small>Physical and Virtual Infrastructure</small>,
-      Hardware Asset Intelligence,
-      Channel Partner Ready
-    ]
+    features:
+      - name: Data Center Assessment
+        description: Physical and Virtual Infrastructure
+        url: "/features.html#data-center-assessment"
+      - name: Hardware Asset Intelligence
+        url: "/features.html#hardware-asset-intelligence"
+      - name: Channel Partner Ready
+        url: "/features.html#channel-partner"
     units: 3,000
     description: Physical, Microsoft Hyper-V <br /> or VMware ESX
 ---
