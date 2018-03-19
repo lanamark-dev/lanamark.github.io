@@ -4,7 +4,7 @@ title: Our Packages
 footer: No additional licenses are required for virtual machines. All prices are in USD.
 prices:
   - header: Bronze
-    cost: $15,000
+    cost: $25,000
     features:
       - name: Data Center Assessment
         description: VMware<sup>&reg;</sup> Infrastructure
