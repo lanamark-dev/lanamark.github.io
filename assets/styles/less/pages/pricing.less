@@ -4,8 +4,8 @@
 
     .columns {
       &.prices {
-        padding-bottom: 80px;
-        margin-bottom: 77px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
         margin-top: 85px;
         border-bottom: 1px solid #f3f4f5;
       }
@@ -16,6 +16,12 @@
           color: @grey;
         }
       }
+    }
+
+    .price-footer {
+      #font .size(15, 1.5em);
+      color: @grey;
+      text-align: center;
     }
 
     .column {
@@ -71,13 +77,21 @@
         .feature {
           margin: 0 28px;
           padding: 28px 0;
-          #font .aktiv(13, 400, 1.4em);
-          color: @grey;
-          border-top: 1px solid #f2f3f4;
+          //border-top: 1px solid #f2f3f4;
+          > a {
+            #font .aktiv(15, 500, 2em);
+            color: @grey;
+            text-decoration: none;
+          }
 
           strong {
             color: #F8902B;
             font-weight: 500;
+          }
+
+          small {
+            #font .aktiv(13, 400, 1.8em);
+            color: @grey;
           }
         }
         .signup {
@@ -90,7 +104,12 @@
 
           .units {
             display: block;
-            #font .size(16, 1.4em);
+            #font .size(20, 2em);
+            color: #F8902B;
+          }
+
+          small {
+            #font .aktiv(13, 400, 1.8em);
             color: @grey;
           }
 

@@ -4,7 +4,7 @@ function main(){
   function stickyMenu(){
     var sections = $('.key-features.feature'),
       nav = $('.sticky-menu'),
-      nav_height = nav.outerHeight();
+      nav_height = nav.outerHeight(); // padding bottom
 
     $(window).on('scroll', function () {
       var cur_pos = $(this).scrollTop();
@@ -27,7 +27,7 @@ function main(){
         , id = $el.attr('href');
 
       $('html, body').animate({
-        scrollTop: $(id).offset().top - nav_height
+        scrollTop: $(id).offset().top - nav_height + 10
       }, 500);
 
       return false;
@@ -115,19 +115,6 @@ function main(){
     prevText: "",
     nextText: ""
   });
-
-  $("#paymentForm").submit(function(e) {
-    var $inputs = $('#paymentForm :input');
-    var values = {};
-    $inputs.each(function() {
-        values[this.name] = $(this).val();
-    });
-
-    var converge = new Converge();
-    var response = converge.sale(values);
-    console.log(response);
-  });
-
 };
 
 

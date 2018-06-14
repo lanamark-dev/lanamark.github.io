@@ -12,9 +12,13 @@ section {
     }
 
     h3 {
-      color: @grey;
+      color: @navy;
       #font .aktiv(18, 400, 24px);
       margin-bottom: 10px;
+
+      &.notes {
+        color: @grey;
+      }
     }
 
     .code {
@@ -27,6 +31,7 @@ section {
 
   > article {
     p {
+      text-align: justify;
       color: @grey !important;
       #font .nimbus(16, 300, 1.5em);
       margin-bottom: 10px;
@@ -50,6 +55,10 @@ section {
         text-decoration: none;
         font-weight: 500;
        }
+
+        > a {
+          color: darken(@grey, 15%);
+        }
     }
 
     @media (max-width: 830px){

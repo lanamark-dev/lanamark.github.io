@@ -12,6 +12,6 @@ sections:
     text: "Add business context to hardware assets:"
     lastLine: true
     columns:
-      - [ Age, Power consumption, Warranty remaining, Carbon footprint ]
-      - [ Rack units used, Heat dissipation, Form factor, Power costs ]
+      - [ Age, Warranty remaining ]
+      - [ Form factor, Rack units used ]
 ---
