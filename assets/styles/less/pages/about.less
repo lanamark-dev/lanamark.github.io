@@ -62,30 +62,23 @@
 
   .key-features {
     padding-top: 100px;
+    border: none !important;
   }
 
-  &.pricing.netapp {
-    .netapp-tools {
-      padding-top: 0;
-      border-top: 0;
-      border-bottom: 0;
-      background: none;
+  .addresses {
+    padding-bottom: 40px;
 
+    .wrap {
+      width: 1100px;
+    }
+
+    @media (max-width: 830px) {
       .wrap {
-        width: 900px;
-        margin: auto;
+        width: 100%;
       }
 
       .columns {
         .column {
-          &:last-child {
-            border-left: 0;
-          }
-        }
-      }
-
-      @media (max-width: 1090px){
-        .wrap {
           width: 100%;
         }
       }
@@ -97,11 +90,17 @@
 
     .map {
       display: inline-block;
-      .size(50%, 280px);
+      .size(33.33%, 280px);
       text-indent: -9999;
       overflow: hidden;
 
       &--left-side {
+        float: left;
+        background: url(../images/maps/kitchener.jpg) repeat center center;
+        .background-size(cover);
+      }
+
+      &--center-side {
         float: left;
         background: url(../images/maps/toronto.jpg) repeat center center;
         .background-size(cover);
